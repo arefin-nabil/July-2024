@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="7.5dp"
+        app:cardMaxElevation="7.5dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="310dp"
+            android:orientation="vertical"
+            android:background="@drawable/bacg2"
+            >
+
+
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="165dp"
+                android:src="@drawable/abusayed"
+                android:scaleType="centerCrop"
+                >
+
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+                    android:id="@+id/serial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="01"
+                    android:padding="1dp"
+                    android:layout_margin="1dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:background="#F3FF1717"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Abu Sayed abu sayed"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/occupation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student"
+                android:textSize="16sp"
+                android:paddingTop="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="8dp"
+                />
+            <TextView
+                android:id="@+id/institute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Employee of a Chair Shop in Sholoshohor, Chattogram"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textSize="12sp"
+                android:paddingLeft="10dp"
+                android:paddingRight="8dp"
+                />
+            <TextView
+                android:id="@+id/deathdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16th July, 2024"
+                android:textSize="16sp"
+                android:paddingLeft="10dp"
+                android:paddingRight="8dp"
+                android:textStyle="bold|italic"
+                android:paddingBottom="5dp"
+                android:paddingTop="2dp"
+                android:textColor="#FF0000"
+                />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".form"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:background="@drawable/detailbg"
+    >
+
+        <ImageView
+            android:id="@+id/backbtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/backicon"
+            android:layout_gravity="left"
+            android:layout_marginBottom="5dp"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            />
+
+
+    <TextView
+        android:id="@+id/titeltext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New MARTYRS info."
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/circle_transparent"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="100dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please provide the following information."
+                android:paddingLeft="35dp"
+                android:paddingBottom="3dp"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/stroke"
+                android:padding="10dp"
+                android:layout_margin="2dp"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/person"
+                    android:layout_gravity="center"
+                    />
+                <EditText
+                    android:id="@+id/edname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name"
+                    android:background="@color/white"
+                    android:paddingLeft="20dp"
+                    android:textSize="20sp"
+                    android:maxLines="1"
+                    android:inputType="textCapWords"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/stroke"
+                android:padding="10dp"
+                android:layout_margin="2dp"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/occupation"
+                    android:layout_gravity="center"
+                    />
+                <EditText
+                    android:id="@+id/edoccup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Occupation"
+                    android:background="@color/white"
+                    android:paddingLeft="20dp"
+                    android:textSize="20sp"
+                    android:maxLines="1"
+                    android:inputType="textCapSentences"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/stroke"
+                android:padding="10dp"
+                android:layout_margin="2dp"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/institute"
+                    android:layout_gravity="center"
+                    />
+                <EditText
+                    android:id="@+id/edinst"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Institution and Address"
+                    android:background="@color/white"
+                    android:paddingLeft="20dp"
+                    android:textSize="20sp"
+                    android:maxLines="1"
+                    android:inputType="textCapSentences"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/stroke"
+                android:padding="10dp"
+                android:layout_margin="2dp"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/date"
+                    android:layout_gravity="center"
+                    />
+                <EditText
+                    android:id="@+id/editTextDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Select Death Date"
+                    android:background="@color/white"
+                    android:paddingLeft="20dp"
+                    android:textSize="20sp"
+                    android:maxLines="1"
+                    android:focusable="false"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/stroke"
+                android:padding="10dp"
+                android:layout_margin="2dp"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/age"
+                    android:layout_gravity="center"
+                    />
+                <EditText
+                    android:id="@+id/edage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Age"
+                    android:background="@color/white"
+                    android:paddingLeft="20dp"
+                    android:textSize="20sp"
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/stroke"
+                android:padding="10dp"
+                android:layout_margin="2dp"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/place"
+                    android:layout_gravity="center"
+                    />
+                <EditText
+                    android:id="@+id/edplace"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Place of Birth"
+                    android:background="@color/white"
+                    android:paddingLeft="20dp"
+                    android:textSize="20sp"
+                    android:maxLines="1"
+                    android:inputType="textCapSentences"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/stroke"
+                android:padding="10dp"
+                android:layout_margin="2dp"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/death"
+                    android:layout_gravity="center"
+                    />
+                <EditText
+                    android:id="@+id/edmartyr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="How became a MARTYR"
+                    android:background="@color/white"
+                    android:paddingLeft="20dp"
+                    android:textSize="20sp"
+                    android:inputType="textCapSentences"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/stroke"
+                android:padding="10dp"
+                android:layout_margin="2dp"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/biography"
+                    android:layout_gravity="center"
+                    />
+                <EditText
+                    android:id="@+id/edbio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Biography"
+                    android:background="@color/white"
+                    android:paddingLeft="20dp"
+                    android:textSize="20sp"
+                    android:inputType="textCapSentences"
+                    />
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Information submitted by..."
+                android:paddingTop="10dp"
+                android:paddingLeft="35dp"
+                android:paddingBottom="3dp"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/stroke"
+                android:padding="10dp"
+                android:layout_margin="2dp"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/person"
+                    android:layout_gravity="center"
+                    />
+                <EditText
+                    android:id="@+id/edname2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Your Name"
+                    android:background="@color/white"
+                    android:paddingLeft="20dp"
+                    android:textSize="20sp"
+                    android:maxLines="1"
+                    android:inputType="textCapWords"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/stroke"
+                android:padding="10dp"
+                android:layout_margin="2dp"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/whatsapp"
+                    android:layout_gravity="center"
+                    />
+                <EditText
+                    android:id="@+id/edwhatsapp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Your Whatsapp Number"
+                    android:background="@color/white"
+                    android:paddingLeft="20dp"
+                    android:textSize="20sp"
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/stroke"
+                android:padding="10dp"
+                android:layout_margin="2dp"
+                android:maxLines="1"
+                android:inputType="phone"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/facebook"
+                    android:layout_gravity="center"
+                    />
+                <EditText
+                    android:id="@+id/edfb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Your Faecebook profile Link"
+                    android:background="@color/white"
+                    android:paddingLeft="20dp"
+                    android:textSize="20sp"
+                    android:maxLines="1"
+                    android:inputType="textUri"
+                    />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I agree that all the information are provided is true and correct"
+                android:textColor="@color/black"
+                android:padding="5dp"
+                />
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressbar"
+                android:visibility="gone"
+                />
+
+            <Button
+                android:id="@+id/submitbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit information"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="#FF3737"
+                android:layout_marginBottom="15dp"
+                />
+            <TextView
+                android:id="@+id/tvdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>
