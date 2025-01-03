@@ -1,5 +1,8 @@
 package com.example.july2024;
 
+import static androidx.core.content.ContextCompat.getSystemService;
+import static androidx.core.content.ContextCompat.startActivity;
+
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -89,7 +92,7 @@ public class MainActivity2 extends AppCompatActivity {
 
     private void fetchData() {
 
-        String url = "https://shopnojhuri.com/nabil/July2024/shohidinfo.json";
+        String url = "https://arefinnabil.site/imageresource/Shohidinfo.json";
         Toast.makeText(MainActivity2.this, "Loading data, please wait...", Toast.LENGTH_SHORT).show();
         JsonArrayRequest arrayRequest = new JsonArrayRequest(Request.Method.GET, url, null,
                 new Response.Listener<JSONArray>() {
